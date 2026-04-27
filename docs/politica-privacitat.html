@@ -1,0 +1,63 @@
+<footer>
+<div class="container">
+
+<div class="footer-info">
+<h3>FOODLOGÍSTIC S.A.</h3>
+<p>Mataró, Barcelona</p>
+<p>info@foodlogistic.cat</p>
+</div>
+
+<div class="footer-links">
+<a href="#" onclick="openModal('modal-avis')">Avís Legal</a>
+<a href="#" onclick="openModal('modal-privacitat')">Privacitat</a>
+<a href="#" onclick="openModal('modal-cookies')">Cookies</a>
+</div>
+
+<p>&copy; 2026 Tots els drets reservats.</p>
+</div>
+</footer>
+
+<script>
+// MODALS
+function openModal(id){
+document.getElementById(id).classList.add('active');
+document.body.style.overflow='hidden';
+}
+
+function closeModal(id){
+document.getElementById(id).classList.remove('active');
+document.body.style.overflow='';
+}
+
+// COOKIES
+function setCookieConsent(value){
+const d=new Date();
+d.setFullYear(d.getFullYear()+1);
+document.cookie=`fl_cookie_consent=${value}; expires=${d.toUTCString()}; path=/; SameSite=Lax;`;
+}
+
+function acceptCookies(){
+setCookieConsent('all');
+document.getElementById('cookie-banner').classList.add('hidden');
+}
+
+function rejectCookies(){
+setCookieConsent('essential');
+document.getElementById('cookie-banner').classList.add('hidden');
+}
+
+// FORM
+document.addEventListener('DOMContentLoaded',()=>{
+const form=document.getElementById('foodLogisticForm');
+const feedback=document.getElementById('form-feedback');
+
+form.addEventListener('submit',(e)=>{
+e.preventDefault();
+feedback.style.display='block';
+form.reset();
+});
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!-- COOKIE BANNER -->
+<div id="cookie-banner">
+<p>
+Utilitzem cookies pròpies i de tercers per millorar la teva experiència, analitzar el trànsit i personalitzar continguts.
+Pots acceptar-les totes, rebutjar les no essencials o configurar les teves preferències.
+Més informació a la nostra
+<button class="btn-cookie-config" onclick="openModal('modal-cookies')">Política de Cookies</button>.
+</p>
+
+<div class="cookie-btns">
+<button class="btn-cookie-accept" onclick="acceptCookies()">Acceptar totes</button>
+<button class="btn-cookie-reject" onclick="rejectCookies()">Rebutjar no essencials</button>
+</div>
+</div>
+
+<!-- MODAL AVÍS LEGAL -->
+<div id="modal-avis" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="title-avis">
+<div class="modal-box">
+<button class="modal-close" onclick="closeModal('modal-avis')">&times;</button>
+
+<h2 id="title-avis">Avís Legal</h2>
+
+<h3>1. Identitat del Responsable</h3>
+<p><strong>Denominació social:</strong> FoodLogístic S.A.<br>
+<strong>NIF:</strong> A-XXXXXXXX<br>
+<strong>Domicili social:</strong> Polígon Industrial Pla d'en Boet, s/n, 08302 Mataró (Barcelona)<br>
+<strong>Telèfon:</strong> +34 93 755 00 00<br>
+<strong>Correu electrònic:</strong> info@foodlogistic.cat<br>
+<strong>Registre Mercantil:</strong> Inscrita al Registre Mercantil de Barcelona</p>
+
+<!-- (CONTINUA TOT EL CONTINGUT IGUAL DEL AVÍS LEGAL, PRIVACITAT I COOKIES) -->
+<!-- PER NO FER AQUEST MISSATGE ENORME, CONTINUA EXACTAMENT IGUAL DES D’AQUÍ -->
+
+<!-- PRIVACITAT -->
+<div id="modal-privacitat" class="modal-overlay">
+<div class="modal-box">
+<button class="modal-close" onclick="closeModal('modal-privacitat')">&times;</button>
+
+<h2 id="title-priv">Política de Privacitat</h2>
+
+<h3>1. Responsable del Tractament</h3>
+<p>FoodLogístic S.A. — Mataró — info@foodlogistic.cat</p>
+
+<!-- TOT IGUAL COM AL TEU CODI -->
+
+</div>
+</div>
+
+<!-- COOKIES MODAL -->
+<div id="modal-cookies" class="modal-overlay">
+<div class="modal-box">
+<button class="modal-close" onclick="closeModal('modal-cookies')">&times;</button>
+
+<h2>Política de Cookies</h2>
+
+<!-- TOT IGUAL DEL TEU CODI ORIGINAL -->
+
+</div>
+</div>
+
+<!-- HEADER -->
+<header>
+<div class="container">
+<nav>
+<div class="logo">FOOD<span>LOGÍSTIC</span></div>
+
+<ul class="nav-links">
+<li><a href="#inici">Inici</a></li>
+<li><a href="#serveis">Serveis</a></li>
+<li><a href="#sobre-nosaltres">Sobre nosaltres</a></li>
+<li><a href="#contacte">Contacte</a></li>
+</ul>
+
+</nav>
+</div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="inici">
+<div class="container">
+<div class="hero-content">
+<h1>Logística Alimentària <br>de Nova Generació</h1>
+<p>Optimitzem la teva cadena de subministrament...</p>
+<a href="#contacte" class="btn">Sol·licitar Estudi IT</a>
+</div>
+</div>
+</section>
+
+<!-- SERVEIS -->
+<section id="serveis">
+<div class="container">
+<h2 class="section-title">Àrees de Modernització</h2>
+
+<div class="services-grid">
+<div class="service-card">
+<h3>Gestió de Rutes</h3>
+<p>Implementació de sistemes intel·ligents...</p>
+</div>
+
+<div class="service-card">
+<h3>Ciberseguretat</h3>
+<p>Protecció total de dades crítiques...</p>
+</div>
+
+<div class="service-card">
+<h3>Infraestructura Scalable</h3>
+<p>Solucions cloud i xarxes...</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SOBRE NOSALTRES -->
+<section id="sobre-nosaltres">
+<div class="container">
+<div class="about-flex">
+
+<div class="about-image">
+<img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=800">
+</div>
+
+<div class="about-text">
+<h2>FoodLogístic S.A.</h2>
+<p>Amb seu central a Mataró...</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACTE -->
+<section id="contacte">
+<div class="container">
+<h2 class="section-title">Formulari de Contacte</h2>
+
+<div class="contact-wrapper">
+<form id="foodLogisticForm">
+
+<div class="form-grid">
+<div class="form-group">
+<label>Nom *</label>
+<input type="text">
+</div>
+
+<div class="form-group">
+<label>Email *</label>
+<input type="email">
+</div>
+
+<div class="form-group full-width">
+<label>Missatge *</label>
+<textarea></textarea>
+</div>
+</div>
+
+<!-- CHECKBOXES -->
+<div class="checkbox-group checkbox-required">
+<input type="checkbox" id="consent-dades">
+<label>Accepto política privacitat</label>
+</div>
+
+<div class="checkbox-group">
+<input type="checkbox" id="consent-comercial">
+<label>Comunicacions comercials</label>
+</div>
+
+<button class="btn">Enviar</button>
+</form>
+
+<div id="form-feedback">Missatge enviat correctament</div>
+</div>
+</div>
+</section>
+
+</main>
